@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.5
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Dec 07, 2019 at 07:33 AM
+- Server version: 10.1.40-MariaDB
+- PHP Version: 7.2.18
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="shopping_cart" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="bulkemails">
+                CREATE TABLE `bulkemails` (
+                  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `EMAIL` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `CUSTOMER_NAME` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `PHONE` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `TICKET_CATEGORY` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `STATUS_SentUnsent` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `attend` int(10) DEFAULT '0',
+                  `ivcode` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `created_at` timestamp NULL DEFAULT NULL,
+                  `updated_at` timestamp NULL DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'shopping_cart'
+    -->
+    <database name="shopping_cart">
+        <!-- Table bulkemails -->
+        <table name="bulkemails">
+            <column name="id">1</column>
+            <column name="EMAIL">info_kbt@yahoo.com</column>
+            <column name="CUSTOMER_NAME">KIIBATI BANKOLE</column>
+            <column name="PHONE">9070001144</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">245</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-06 14:13:54</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">2</column>
+            <column name="EMAIL">info_kbt@yahoo.com</column>
+            <column name="CUSTOMER_NAME">KIIBATI BANKOLE</column>
+            <column name="PHONE">9070001144</column>
+            <column name="TICKET_CATEGORY">VIP</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">245</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-06 14:13:54</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">3</column>
+            <column name="EMAIL">waheedmumeen1999@icloud.com</column>
+            <column name="CUSTOMER_NAME">WAHEED MUMEEN</column>
+            <column name="PHONE">8152640874</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">3060</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-07 15:57:32</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">4</column>
+            <column name="EMAIL">esurfonline@gmail.com</column>
+            <column name="CUSTOMER_NAME">kenneth akpan</column>
+            <column name="PHONE">08120960876</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5186</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-06 10:02:26</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">15</column>
+            <column name="EMAIL">clipsemgt@gmail.com</column>
+            <column name="CUSTOMER_NAME">clipse</column>
+            <column name="PHONE">09352454564</column>
+            <column name="TICKET_CATEGORY">Vip</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5158</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-06 14:13:44</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">16</column>
+            <column name="EMAIL">nigerazu@gmail.com</column>
+            <column name="CUSTOMER_NAME">nigerazu</column>
+            <column name="PHONE">089994833839</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8873</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-06 16:13:04</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">17</column>
+            <column name="EMAIL">mayorwalex11@gmail.com</column>
+            <column name="CUSTOMER_NAME">FOLARIN WASIU</column>
+            <column name="PHONE">08153048614</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">2613</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-07 16:00:57</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">18</column>
+            <column name="EMAIL">mayorwalex11@gmail.com</column>
+            <column name="CUSTOMER_NAME">FOLARIN WASIU</column>
+            <column name="PHONE">08153048614</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">2613</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-07 16:00:57</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">19</column>
+            <column name="EMAIL">olamideamina9@gmail.com</column>
+            <column name="CUSTOMER_NAME">OLAMIDE DAUDA</column>
+            <column name="PHONE">09055460246</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8031</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-07 16:03:13</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">20</column>
+            <column name="EMAIL">akereleseun63@gmail.com</column>
+            <column name="CUSTOMER_NAME">AKERELE SEUN</column>
+            <column name="PHONE">08054543790</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">6572</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-07 16:03:22</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">21</column>
+            <column name="EMAIL">charlotte.teanah@gmail.com
+</column>
+            <column name="CUSTOMER_NAME">AUGUSTINA ONWUALU</column>
+            <column name="PHONE">09057828430</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">0</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8282</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">22</column>
+            <column name="EMAIL">happyafolabi1999@gmail.com</column>
+            <column name="CUSTOMER_NAME">HAPPY AFOLABI</column>
+            <column name="PHONE">08122613911</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">9030</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-11 16:34:38</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">23</column>
+            <column name="EMAIL">arozainabaduke25@gmail.com</column>
+            <column name="CUSTOMER_NAME">ARO ZAINAB</column>
+            <column name="PHONE">09074547442</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">6330</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-11 19:18:05</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">24</column>
+            <column name="EMAIL">Collinsemmy80@gmail.com</column>
+            <column name="CUSTOMER_NAME">COLLINS EMMANUEL</column>
+            <column name="PHONE">08145615375</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5096</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-13 07:18:34</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">25</column>
+            <column name="EMAIL">adekanyejoshua127@gmail.com</column>
+            <column name="CUSTOMER_NAME">Joshua Adekanye</column>
+            <column name="PHONE">08024655987</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8779</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-19 15:42:39</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">26</column>
+            <column name="EMAIL">oladejotoheeb09@gmail.com</column>
+            <column name="CUSTOMER_NAME">Oladejo Toheeb</column>
+            <column name="PHONE">09032367645</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">9238</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-19 15:43:03</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">27</column>
+            <column name="EMAIL">waheedmumeen1999@icloud.com</column>
+            <column name="CUSTOMER_NAME">WAHEED MUMEEN</column>
+            <column name="PHONE">08152640874</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">9596</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">28</column>
+            <column name="EMAIL">taiwotoye45@yahoo.com</column>
+            <column name="CUSTOMER_NAME">Taiwo Olatoye</column>
+            <column name="PHONE">08137118849</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5802</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">29</column>
+            <column name="EMAIL">kejihismot9@gmail.com</column>
+            <column name="CUSTOMER_NAME">Hismot Aminu</column>
+            <column name="PHONE">08150369395</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">2522</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-25 17:33:09</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">30</column>
+            <column name="EMAIL">akanex42@gmail.com</column>
+            <column name="CUSTOMER_NAME">Ubong Akaninyane</column>
+            <column name="PHONE">08034467359</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5259</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-25 17:36:09</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">31</column>
+            <column name="EMAIL">akanex42@gmail.com</column>
+            <column name="CUSTOMER_NAME">Ubong Akaninyane</column>
+            <column name="PHONE">08034467359</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5259</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-25 17:36:09</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">32</column>
+            <column name="EMAIL">abiodunfadairo2014@gmail.com</column>
+            <column name="CUSTOMER_NAME">Fadairo Wasiu</column>
+            <column name="PHONE">07061307677</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">7196</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-25 17:34:06</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">33</column>
+            <column name="EMAIL">oyefuleolumide11@gmail.com</column>
+            <column name="CUSTOMER_NAME">Olumide Oyefule</column>
+            <column name="PHONE">08091825553</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">6614</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-06 14:18:57</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">34</column>
+            <column name="EMAIL">oyefuleolumide11@gmail.com</column>
+            <column name="CUSTOMER_NAME">Olumide Oyefule</column>
+            <column name="PHONE">08091825553</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8781</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-06 22:32:07</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">35</column>
+            <column name="EMAIL">folukeolufemi90@gmail.com</column>
+            <column name="CUSTOMER_NAME">Olufemi Foluke</column>
+            <column name="PHONE">09051691752</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">7101</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-26 16:23:20</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">36</column>
+            <column name="EMAIL">smithmathew270@gmail.com</column>
+            <column name="CUSTOMER_NAME">Agbaje Mathew</column>
+            <column name="PHONE">07014193261</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">7232</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-29 05:15:31</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">37</column>
+            <column name="EMAIL">oladejotoheeb09@gmail.com</column>
+            <column name="CUSTOMER_NAME">Oladejo Toheeb</column>
+            <column name="PHONE">09032367645</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8915</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-30 19:43:37</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">38</column>
+            <column name="EMAIL">kvngtaj2000@gmail.com</column>
+            <column name="CUSTOMER_NAME">Ajala Babatunde oluwadamilare</column>
+            <column name="PHONE">08083811153</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5501</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-11-30 19:44:09</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">39</column>
+            <column name="EMAIL">demseydemola33@gmail.com</column>
+            <column name="CUSTOMER_NAME">Adegoke Akeem</column>
+            <column name="PHONE">08062351645</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">362</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-01 19:28:44</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">40</column>
+            <column name="EMAIL">nifemi1big@gmail.com</column>
+            <column name="CUSTOMER_NAME">Joseph Oluwanifemi</column>
+            <column name="PHONE">07013327602</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">3497</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">41</column>
+            <column name="EMAIL">Phowobathafolabi@gmail.com</column>
+            <column name="CUSTOMER_NAME">Kehinde Fowowe</column>
+            <column name="PHONE">08175022143</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">3020</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-02 12:45:45</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">42</column>
+            <column name="EMAIL">Phowobathafolabi@gmail.com</column>
+            <column name="CUSTOMER_NAME">Kehinde Fowowe</column>
+            <column name="PHONE">08175022143</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5298</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-02 12:46:56</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">43</column>
+            <column name="EMAIL">Phowobathafolabi@gmail.com</column>
+            <column name="CUSTOMER_NAME">Kehinde Fowowe</column>
+            <column name="PHONE">08175022143</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5443</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-02 12:47:44</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">44</column>
+            <column name="EMAIL">Phowobathafolabi@gmail.com</column>
+            <column name="CUSTOMER_NAME">Kehinde Fowowe</column>
+            <column name="PHONE">08175022143</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">1037</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-02 12:48:22</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">45</column>
+            <column name="EMAIL">covenantokems@yahoo.com</column>
+            <column name="CUSTOMER_NAME">Covenant Okems</column>
+            <column name="PHONE">08186721972</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">4353</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-02 18:20:14</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">46</column>
+            <column name="EMAIL">covenantokems@yahoo.com</column>
+            <column name="CUSTOMER_NAME">Alhaji Bash</column>
+            <column name="PHONE">08186721972</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">1159</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-02 18:20:49</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">47</column>
+            <column name="EMAIL">dharnihelcoded2014@gmail.com</column>
+            <column name="CUSTOMER_NAME">Daniel Moshood</column>
+            <column name="PHONE">09095960022</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8724</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-03 14:25:43</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">48</column>
+            <column name="EMAIL">adewaleishola442@gmail.com</column>
+            <column name="CUSTOMER_NAME">Adewale Ishola</column>
+            <column name="PHONE">7089379490</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5113</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-03 14:25:59</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">50</column>
+            <column name="EMAIL">boluwatife.adeagbo@yahoo.com</column>
+            <column name="CUSTOMER_NAME">Boluwatife Adeagbo</column>
+            <column name="PHONE">08092748901</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">9351</column>
+            <column name="created_at">2019-12-05 04:09:05</column>
+            <column name="updated_at">2019-12-05 04:09:05</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">51</column>
+            <column name="EMAIL">issyboss2017@gmail.com</column>
+            <column name="CUSTOMER_NAME">Israel Igiri</column>
+            <column name="PHONE">09068030355</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">3802</column>
+            <column name="created_at">2019-12-05 04:09:48</column>
+            <column name="updated_at">2019-12-05 04:09:48</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">52</column>
+            <column name="EMAIL">oduntanmotunrayo27@gmail.com</column>
+            <column name="CUSTOMER_NAME">Motunrayo Oduntan</column>
+            <column name="PHONE">08118145223</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">3510</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">53</column>
+            <column name="EMAIL">dharnihelcoded2014@gmail.com</column>
+            <column name="CUSTOMER_NAME">Daniel Moshood</column>
+            <column name="PHONE">09095960022</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8724</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">54</column>
+            <column name="EMAIL">tobiadeyemi94@yahoo.com</column>
+            <column name="CUSTOMER_NAME">Tobi Adeyemi</column>
+            <column name="PHONE">08131517157</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">2596</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">55</column>
+            <column name="EMAIL">emmanuelawele@gmail.com</column>
+            <column name="CUSTOMER_NAME">Awele Onwuegbuzie</column>
+            <column name="PHONE">8090651344</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8029</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">56</column>
+            <column name="EMAIL">boluwatife.adeagbo@yahoo.com</column>
+            <column name="CUSTOMER_NAME">Boluwatife Adeagbo</column>
+            <column name="PHONE">08092748901</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5021</column>
+            <column name="created_at">2019-12-05 08:38:22</column>
+            <column name="updated_at">2019-12-05 08:38:22</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">57</column>
+            <column name="EMAIL">boluwatife.adeagbo@yahoo.com</column>
+            <column name="CUSTOMER_NAME">Boluwatife Adeagbo</column>
+            <column name="PHONE">08092748901</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">2312</column>
+            <column name="created_at">2019-12-05 08:39:52</column>
+            <column name="updated_at">2019-12-05 08:39:52</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">58</column>
+            <column name="EMAIL">boluwatife.adeagbo@yahoo.com</column>
+            <column name="CUSTOMER_NAME">Boluwatife Adeagbo</column>
+            <column name="PHONE">08092748901</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">2615</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-05 08:10:41</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">59</column>
+            <column name="EMAIL">boluwatife.adeagbo@yahoo.com</column>
+            <column name="CUSTOMER_NAME">Boluwatife Adeagbo</column>
+            <column name="PHONE">08092748901</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">3467</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-05 08:09:32</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">60</column>
+            <column name="EMAIL">boluwatife.adeagbo@yahoo.com</column>
+            <column name="CUSTOMER_NAME">Boluwatife Adeagbo</column>
+            <column name="PHONE">08092748901</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8198</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">2019-12-05 08:08:32</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">61</column>
+            <column name="EMAIL">adelekesmilez@gmail.com</column>
+            <column name="CUSTOMER_NAME">Obinna Silas</column>
+            <column name="PHONE">07030457392</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">7899</column>
+            <column name="created_at">2019-12-05 10:55:39</column>
+            <column name="updated_at">2019-12-05 10:55:39</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">62</column>
+            <column name="EMAIL">donsoufan98@gmail.com</column>
+            <column name="CUSTOMER_NAME">Ali Soufan</column>
+            <column name="PHONE">08160000060</column>
+            <column name="TICKET_CATEGORY">VVIP</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5577</column>
+            <column name="created_at">2019-12-06 06:31:10</column>
+            <column name="updated_at">2019-12-06 06:31:11</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">63</column>
+            <column name="EMAIL">stallingmorgan@gmail.com</column>
+            <column name="CUSTOMER_NAME">Stalling Morgan</column>
+            <column name="PHONE">0800000000000</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8530</column>
+            <column name="created_at">2019-12-06 06:33:59</column>
+            <column name="updated_at">2019-12-06 06:33:59</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">64</column>
+            <column name="EMAIL">oyefuleolumide11@gmail.com</column>
+            <column name="CUSTOMER_NAME">Olumide Oyefule</column>
+            <column name="PHONE">08091825553</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8446</column>
+            <column name="created_at">2019-12-06 14:18:57</column>
+            <column name="updated_at">2019-12-06 22:33:36</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">67</column>
+            <column name="EMAIL">samuel.adeyemo@ymail.com</column>
+            <column name="CUSTOMER_NAME">Adeyemo Anjolajesu</column>
+            <column name="PHONE">09069440258</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">9997</column>
+            <column name="created_at">2019-12-06 14:11:35</column>
+            <column name="updated_at">2019-12-06 14:11:35</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">68</column>
+            <column name="EMAIL">iambqbybisola@gmail.com</column>
+            <column name="CUSTOMER_NAME">Ayoola Abisola</column>
+            <column name="PHONE">08170045357</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8933</column>
+            <column name="created_at">2019-12-06 14:13:56</column>
+            <column name="updated_at">2019-12-06 14:13:56</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">69</column>
+            <column name="EMAIL">anjayd2nd@gmail.com</column>
+            <column name="CUSTOMER_NAME">Nwakwo Ada</column>
+            <column name="PHONE">07039673457</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">6842</column>
+            <column name="created_at">2019-12-06 14:21:43</column>
+            <column name="updated_at">2019-12-06 14:21:43</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">70</column>
+            <column name="EMAIL">nduvincent@gmail.com</column>
+            <column name="CUSTOMER_NAME">Vincent Ndu</column>
+            <column name="PHONE">07067332520</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">2991</column>
+            <column name="created_at">2019-12-06 16:38:56</column>
+            <column name="updated_at">2019-12-06 16:38:56</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">71</column>
+            <column name="EMAIL">efi4life@gmail.com</column>
+            <column name="CUSTOMER_NAME">Bawo Okorodudu</column>
+            <column name="PHONE">07060986655</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5770</column>
+            <column name="created_at">2019-12-06 19:23:31</column>
+            <column name="updated_at">2019-12-06 19:23:31</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">72</column>
+            <column name="EMAIL">hedgazal@gmail.com</column>
+            <column name="CUSTOMER_NAME">Gasali Olalekan</column>
+            <column name="PHONE">07017527279</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">5504</column>
+            <column name="created_at">2019-12-06 20:19:38</column>
+            <column name="updated_at">2019-12-06 20:19:38</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">73</column>
+            <column name="EMAIL">vicknessmorgan@gmail.com</column>
+            <column name="CUSTOMER_NAME">Cynthia Okoye</column>
+            <column name="PHONE">07064687586</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">8602</column>
+            <column name="created_at">2019-12-06 22:03:14</column>
+            <column name="updated_at">2019-12-06 22:03:15</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">74</column>
+            <column name="EMAIL">toheebolalekan001@gmail.com</column>
+            <column name="CUSTOMER_NAME">Nosirudeen Toheeb</column>
+            <column name="PHONE">07088081465</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">1926</column>
+            <column name="created_at">2019-12-06 22:04:26</column>
+            <column name="updated_at">2019-12-06 22:04:26</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">75</column>
+            <column name="EMAIL">02akarah@gmail.com</column>
+            <column name="CUSTOMER_NAME">Akarah Jude</column>
+            <column name="PHONE">08166997862</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">2342</column>
+            <column name="created_at">2019-12-06 22:46:17</column>
+            <column name="updated_at">2019-12-06 22:46:17</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">76</column>
+            <column name="EMAIL">robinsonsmith377@gmail.com</column>
+            <column name="CUSTOMER_NAME">Balogun Ismaheel</column>
+            <column name="PHONE">09097031089</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">2735</column>
+            <column name="created_at">2019-12-06 22:52:21</column>
+            <column name="updated_at">2019-12-06 22:52:21</column>
+        </table>
+        <table name="bulkemails">
+            <column name="id">77</column>
+            <column name="EMAIL">christopherakarah@gmail.com</column>
+            <column name="CUSTOMER_NAME">Christopher Akarah</column>
+            <column name="PHONE">08169931638</column>
+            <column name="TICKET_CATEGORY">Regular</column>
+            <column name="STATUS_SentUnsent">1</column>
+            <column name="attend">0</column>
+            <column name="ivcode">4315</column>
+            <column name="created_at">2019-12-06 22:54:59</column>
+            <column name="updated_at">2019-12-06 22:54:59</column>
+        </table>
+    </database>
+</pma_xml_export>

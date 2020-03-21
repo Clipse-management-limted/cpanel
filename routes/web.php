@@ -32,13 +32,17 @@ Auth::routes();
 // AUTH
 Route::middleware(['auth'])->group(function(){
   Route::get('/home', 'HomeController@index')->name('home');
-  Route::get('/', 'UnauthController@welcome')->name('welcome');
+  // Route::get('/', 'UnauthController@welcome')->name('welcome');
 });
 //staff || administrator AUTH
 Route::group(['middleware'=>'check-permission:administrator|staff'], function () {
-
-
-
+  Route::get('/','HomeController@upload');
+  Route::get('filesstore','HomeController@show')->name('filesstore');
+  Route::post('/users/fileupload/','HomeController@fileupload')->name('users.fileupload');
+Route::post('image/delete','HomeController@fileDestroy');
+// Route::resource('files', 'HomeController');
+Route::get('documents/download/{uuid}', 'HomeController@download')->name('documents.download');
+Route::get('up/{id}','HomeController@up')->name('up');
 });
 
 

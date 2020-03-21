@@ -39,6 +39,8 @@
         <!-- Style-->
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
+        <!-- Ekko Lightbox -->
+        <link rel="stylesheet" href="../plugins/ekko-lightbox/ekko-lightbox.css">
         <!-- overlayScrollbars -->
         <link rel="stylesheet" href="{{ asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
         <!-- Theme style -->
@@ -72,7 +74,7 @@
           </ul>
 
           <!-- SEARCH FORM -->
-          <form class="form-inline ml-3">
+          {{-- <form class="form-inline ml-3">
             <div class="input-group input-group-sm">
               <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
               <div class="input-group-append">
@@ -81,7 +83,7 @@
                 </button>
               </div>
             </div>
-          </form>
+          </form> --}}
 
           <!-- Right navbar links -->
           <ul class="navbar-nav ml-auto">
@@ -195,7 +197,7 @@
                 <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
               </div>
               <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
+                <a href="#" class="d-block">    {{ Auth::user()->name }}</a>
               </div>
             </div>
 
@@ -204,7 +206,7 @@
               <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
-                <li class="nav-item has-treeview menu-open">
+                {{-- <li class="nav-item has-treeview menu-open">
                   <a href="#" class="nav-link active">
                     <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
@@ -232,8 +234,8 @@
                       </a>
                     </li>
                   </ul>
-                </li>
-                <li class="nav-item">
+                </li> --}}
+                {{-- <li class="nav-item">
                   <a href="pages/widgets.html" class="nav-link">
                     <i class="nav-icon fas fa-th"></i>
                     <p>
@@ -289,8 +291,8 @@
                       </a>
                     </li>
                   </ul>
-                </li>
-                <li class="nav-item has-treeview">
+                </li> --}}
+                {{-- <li class="nav-item has-treeview">
                   <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-chart-pie"></i>
                     <p>
@@ -318,8 +320,8 @@
                       </a>
                     </li>
                   </ul>
-                </li>
-                <li class="nav-item has-treeview">
+                </li> --}}
+                {{-- <li class="nav-item has-treeview">
                   <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-tree"></i>
                     <p>
@@ -377,8 +379,8 @@
                       </a>
                     </li>
                   </ul>
-                </li>
-                <li class="nav-item has-treeview">
+                </li> --}}
+                {{-- <li class="nav-item has-treeview">
                   <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-edit"></i>
                     <p>
@@ -703,25 +705,35 @@
                     <p>Level 1</p>
                   </a>
                 </li>
-                <li class="nav-header">LABELS</li>
+
+               --}}
+               <li class="nav-header">LABELS</li>
+               <li class="nav-item">
+                 <a href="#" class="nav-link">
+                   <i class="nav-icon far fa-circle text-danger"></i>
+                   <p class="text">Important</p>
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a href="{{ route('filesstore') }}" class="nav-link">
+                   <i class="nav-icon far fa-circle text-warning"></i>
+                   <p>Downloads</p>
+                 </a>
+               </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="nav-icon far fa-circle text-danger"></i>
-                    <p class="text">Important</p>
+                  <a class="nav-icon far fa-circle text-info" href="{{ route('logout') }}"
+                     onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                      {{ __('Logout') }}
                   </a>
+                       {{-- <a class="dropdown-item" href="{{ route('dashboard') }}">{{ __('Dashboard') }}</a>
+                       <a class="dropdown-item" href="{{ route('ct') }}">{{ __('Create Vip Ticket') }}</a>
+                  <a class="dropdown-item" href="{{ route('rg') }}">{{ __('Create Regular Ticket') }}</a> --}}
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form>
                 </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="nav-icon far fa-circle text-warning"></i>
-                    <p>Warning</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="nav-icon far fa-circle text-info"></i>
-                    <p>Informational</p>
-                  </a>
-                </li>
+
               </ul>
             </nav>
             <!-- /.sidebar-menu -->
@@ -729,11 +741,29 @@
           <!-- /.sidebar -->
         </aside>
 
-
+        <!-- Content Wrapper. Contains page content -->
+     <div class="content-wrapper">
+       <!-- Content Header (Page header) -->
+       <section class="content-header">
+         <div class="container-fluid">
+           <div class="row mb-2">
+             <div class="col-sm-6">
+               <h1>Gallery</h1>
+             </div>
+             <div class="col-sm-6">
+               <ol class="breadcrumb float-sm-right">
+                 <li class="breadcrumb-item"><a href="#">Home</a></li>
+                 <li class="breadcrumb-item active">Gallery</li>
+               </ol>
+             </div>
+           </div>
+         </div><!-- /.container-fluid -->
+       </section>
         @yield('content')
 
 
-
+      </div>
+     <!-- /.content-wrapper -->
 
 	 <!-- ==============================================
 	 Footer Section
@@ -764,6 +794,10 @@
    <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
    <!-- Bootstrap -->
    <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+   <!-- jQuery UI -->
+   <script src="{{ asset('../plugins/jquery-ui/jquery-ui.min.js') }}"></script>
+   <!-- Ekko Lightbox -->
+   <script src="{{ asset('../plugins/ekko-lightbox/ekko-lightbox.min.js') }}"></script>
    <!-- overlayScrollbars -->
    <script src="{{ asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
    <!-- AdminLTE App -->
