@@ -51,7 +51,7 @@
            return time+file.name;
           // return file.name;
         },
-        acceptedFiles: ".jpg,.sql,.xml,.jpeg,.gif,.png,.zip,.xlsx,.cad,.pdf,.doc,.docx,.ppt,.pptx,.pps,.ppsx,.odt,.xls,.xlsx,.mp3,.m4a,.ogg,.wav,.mp4,.m4v,.mov,.wmv",
+        acceptedFiles: ".jpg,.sql,.xml,.jpeg,.gif,.png,.zip,.rar,.xlsx,.cad,.pdf,.doc,.docx,.ppt,.pptx,.pps,.ppsx,.odt,.xls,.xlsx,.mp3,.m4a,.ogg,.wav,.mp4,.m4v,.mov,.wmv",
         addRemoveLinks: true,
         timeout: 50000,
            removedfile: function(file)

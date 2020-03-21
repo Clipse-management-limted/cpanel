@@ -2,11 +2,6 @@
 @section('title') Downloads  @endsection
 @section('content')
 
-
-  @extends('layouts.app')
-  @section('title') Dahboard @endsection
-  @section('content')
-
   <div class="container">
 
 
@@ -216,18 +211,3 @@
   @endsection
 
   @endsection
-
-
-
-
-
-
- @section('javascript')
-
-
-
-
-
-
- @endsection
-   @endsection

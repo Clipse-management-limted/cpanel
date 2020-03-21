@@ -50,7 +50,7 @@ class HomeController extends Controller
          $extension = $request->file('file')->getClientOriginalExtension();
 
          // Valid extensions
-         $validextensions = array('jpg','xml','sql','jpeg', 'gif', 'png', 'zip', 'xlsx', 'cad', 'pdf', 'doc', 'docx', 'ppt', 'pptx', 'pps', 'ppsx', 'odt', 'xls', 'xlsx', '.mp3', 'm4a', 'ogg', 'wav', 'mp4', 'm4v', 'mov', 'wmv');
+         $validextensions = array('jpg','xml','sql','jpeg','rar', 'gif', 'png', 'zip', 'xlsx', 'cad', 'pdf', 'doc', 'docx', 'ppt', 'pptx', 'pps', 'ppsx', 'odt', 'xls', 'xlsx', '.mp3', 'm4a', 'ogg', 'wav', 'mp4', 'm4v', 'mov', 'wmv');
 
          // Check extension
          if(in_array(strtolower($extension), $validextensions)){
