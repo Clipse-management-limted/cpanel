@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Carbon\Carbon;
-// use App\Models\ImageUpload;
- use App\ImageUpload;
+use App\Models\ImageUpload;
+// use App\ImageUpload;
 
 class HomeController extends Controller
 {
